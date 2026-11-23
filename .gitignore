@@ -24,3 +24,18 @@ CMakeCache.txt
 .ninja_log
 Testing/
 build.ninja
+
+# Everything the scripts download or build
+work/
+
+# Per-experiment output: keep only the CBOMs
+results/**/*
+!results/**/
+!results/**/cbom.json
+
+# Python
+__pycache__/
+*.pyc
+
+# .DS_Store
+.DS_Store
